@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <img src="imagens/cesto2.svg" id="imgSacola"  alt="Sacola de compras" />
+      <form>
+        <input
+          id="item"
+          type="text"
+          placeholder="Digite o Item que deseja adicionar"
+        />
+        <button id="bt-add">Salvar Item</button>
+      </form>
+      <div class="container-lista">
+        <h2>Lista de Compras</h2>
+        <hr />
+        <ul id="lista-de-compras">
+          <p id="msg-lista-vazia" style="display: block;">Sua lista está vazia. Adicione itens a ele para não esquecer nada na próxima compra!</p>
+        </ul>
+        <div id="container-lista-comprados">
+          <h2>Comprado</h2>
+          <hr />
+          <ul id="lista-comprados"></ul>
+        </div>
+       
+      </div>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

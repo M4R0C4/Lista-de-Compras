@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --cor-primaria: #ffa500;
+  --cor-secundaria: #ffd700;
+  --neutro: #550C6B;
+  --preto: #131730;
+  --cor-fonte:white;
+  --fonte-titulo: "Montserrat", sans-serif;
+  --fonte-texto: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: var(--degrde-azul);
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  margin-top: 64x;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 440px;
+  align-items: center;
+  background-color: var(--neutro);
+  padding: 56px;
+  border-radius: 16px;
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  font-size: 20px;
+  line-height: 33px;
+  text-align: left;
+}
+hr {
+  border: none;
+  border-bottom: 3px dotted var(--cor-secundaria);
+  margin-bottom: 24px;
+  width: 100%;
+}
+p {
+  font-family: var(--fonte-texto);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+div img {
+  width: 20px;
+  height: 20px;
+}
+
+#item {
+  padding: 12px 16px;
+  display: block;
+  border-radius: 24px;
+  border: 1px solid var(--preto);
+  width: 307px;
+}
+#item::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+#bt-add {
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 24px;
+  background-color: var(--cor-primaria);
+  color: var(--neutro);
+  font-family: var(--fonte-texto);
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-lista-container {
+  display: flex;
+  justify-content: space-between;
+}
+.item-lista-container div{
+  padding: 5px;
+  color:var(--cor-fonte);
+  display: flex;
+  gap:8px;
+}
+.container-nome {
+  display: flex;
+  gap: 5px;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.item-texto {
+  color:var(--cor-fonte);
+  font-size: 12px;
+  line-height: 12px;
+}
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-customizado {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid var(--preto);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.checked {
+  background-color: var(--preto);
+  position: relative;
+}
+.checked::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: -10%;
+  width: 5px;
+  height: 14px;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transform: rotate(-140deg);
+}
+.botao-acao {
+  background-color: var(--cor-primaria);
+  cursor: pointer;
+}
+.texto-data{
+  font-size: 14px;
+  color: bisque;
+}
+#msg-lista-vazia{
+  font-size: 14px;
+  font-family: var(--fonte-texto);
+  color: bisque;
+}
+#imgSacola{
+padding-left: 98px;
+
+
+}
