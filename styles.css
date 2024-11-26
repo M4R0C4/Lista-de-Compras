@@ -4,6 +4,7 @@
   padding: 0;
 }
 :root {
+  --cor-fundo:#241d50;
   --cor-primaria: #ffa500;
   --cor-secundaria: #ffd700;
   --neutro: #550C6B;
@@ -14,8 +15,7 @@
 }
 
 body {
-  background: var(--degrde-azul);
-  background-repeat: no-repeat;
+  background: var(--co);
   height: 100vh;
 
   display: flex;
@@ -23,19 +23,19 @@ body {
   align-items: center;
 }
 main {
-  margin-top: 64x;
-
   display: flex;
   flex-direction: column;
+  margin-top: 56px;
   gap: 24px;
-
   width: 440px;
   align-items: center;
   background-color: var(--neutro);
   padding: 56px;
   border-radius: 16px;
 }
-
+main #imgSacola {
+margin-right: 80px;
+}
 h2 {
   font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
