@@ -2,6 +2,7 @@ import { excluirItem } from "./excluirItem.js";
 import { verificarListaComprados } from "./verificarListaComprados.js";
 import { editarItem } from "./editarItem.js";
 import { gerarDiaDaSemana } from "./gerarDiaDaSemana.js";
+import {inserirPreco, inserirQuantidade} from "./precoEQuantidade.js"
 
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
@@ -40,7 +41,12 @@ export function criarItemDaLista(item) {
     } else {
       checkboxCustom.classList.remove("checked");
       itemTitulo.style.textDecoration = "none";
-      listaDeCompras.appendChild(itemDaLista);
+     // if (nomeDoItem.textContent !== ""){
+       // alert("Por favor, insira um item válido")
+     // } else{
+
+        listaDeCompras.appendChild(itemDaLista);
+    //  }
     }
     verificarListaComprados(listaComprados);
   });
@@ -56,8 +62,17 @@ export function criarItemDaLista(item) {
   const nomeDoItem = document.createElement("p");
   nomeDoItem.id = "item-titulo";
   nomeDoItem.innerHTML = item;
-
   containerNomeDoItem.appendChild(nomeDoItem);
+
+  const quantidadeDoItem = document.createElement("p");
+  quantidadeDoItem.id = "quantidade-item";
+  quantidadeDoItem.textContent = `${inserirQuantidade(document.getElementById("quantidade").value)}x`
+  containerNomeDoItem.appendChild(quantidadeDoItem);
+
+  const precoDoItem = document.createElement("p");
+  precoDoItem.id = "preco-item";
+  precoDoItem.textContent = `R$ ${inserirPreco(preco.value)}`;
+  containerNomeDoItem.appendChild(precoDoItem);
 
   const containerBotoes = document.createElement("div");
   const botaoEditar = document.createElement("button");
@@ -84,7 +99,6 @@ export function criarItemDaLista(item) {
 
   botaoRemover.appendChild(imagemRemover);
   containerBotoes.appendChild(botaoRemover);
-
   containerItemLista.appendChild(containerNomeDoItem);
   containerItemLista.appendChild(containerBotoes);
 
@@ -94,6 +108,7 @@ export function criarItemDaLista(item) {
 
   itemDaLista.appendChild(containerItemLista);
   itemDaLista.appendChild(itemData);
+
 
   return itemDaLista;
 }
