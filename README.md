@@ -24,6 +24,7 @@ Itens são movidos da lista de "Compras" para a lista de "Comprados" ao serem ma
 - HTML5: Para estruturar a página e os elementos do formulário.
 - CSS3: Para estilizar a página e proporcionar um design moderno e responsivo.
 - JavaScript: Para manipular a DOM e implementar a lógica de adicionar, editar, excluir e marcar os itens como comprados.
+- LocalStorage para guardar a lista de compras no armazenamento local
 
 ## Como Usar 📋
 1. Clone este repositório:

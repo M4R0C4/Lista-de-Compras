@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Compras</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-    <main>
-      <img src="imagens/cestocompras.png" id="imgSacola"  alt="Sacola de compras" />
-      <form>
-        <input
-          id="item"
-          type="text"
-          placeholder="Digite o Item que deseja adicionar"
-        />
-        <button id="bt-add">Salvar Item</button>
-      </form>
-      <div class="container-lista">
-        <h2>Lista de Compras</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="yourpath/all-animation.css" />
+</head>
+
+<body class="pattern-cross-dots-lg">
+
+  <main>
+
+      <img src="imagens/cestocompras.png" id="imgSacola" class="a-flip-right" alt="Carrinho de compras" />
+
+    <form id="form-item">
+      <input id="item" type="text" placeholder="Digite o Item que deseja adicionar" />
+      <button id="bt-add">Salvar Item</button>
+    </form>
+    <div class="container-lista">
+      <h2>Lista de Compras</h2>
+      <hr />
+      <ul id="lista-de-compras">
+        <p id="msg-lista-vazia" style="display: block;">Sua lista está vazia. Adicione itens a ele para não esquecer
+          nada na próxima compra!</p>
+      </ul>
+      <div id="container-lista-comprados">
+        <h2>Comprado</h2>
         <hr />
-        <ul id="lista-de-compras">
-          <p id="msg-lista-vazia" style="display: block;">Sua lista está vazia. Adicione itens a ele para não esquecer nada na próxima compra!</p>
-        </ul>
-        <div id="container-lista-comprados">
-          <h2>Comprado</h2>
-          <hr />
-          <ul id="lista-comprados"></ul>
-        </div>
-       
+        <ul id="lista-comprados"></ul>
       </div>
-    </main>
-    <script src="script.js" type="module"></script>
-  </body>
+
+    </div>
+  </main>
+  <script src="/scripts/script.js" type="module"></script>
+</body>
+
 </html>

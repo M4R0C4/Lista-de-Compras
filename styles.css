@@ -32,6 +32,7 @@ main {
   background-color: var(--neutro);
   padding: 56px;
   border-radius: 16px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 main #imgSacola {
 margin-right: 80px;
@@ -163,4 +164,18 @@ ul {
 padding-left: 98px;
 
 
+}
+.nome-item{
+  font-size: 18px;
+  color: bisque;
+  background-color: transparent;
+  border: none;
+  width: 100px;
+}
+.container-lista{
+  width: 100%;
+}
+
+.itens-comprados{
+  text-decoration: line-through;
 }
